@@ -43,7 +43,7 @@ else{
 	function update_position()
 	{
 		
-		$.post("updata_position.php",function callback(data,status){
+		$.post("updata_position_db.php",function callback(data,status){
 			alert(data)});
 	}
 </script>

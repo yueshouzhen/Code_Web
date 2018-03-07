@@ -25,7 +25,7 @@ function call_read($file,$flag_read) //读取text并将数据转换为数组
 	$txt_array=explode($flag_read,$txt_1);
 	return $txt_array;
 	
-	}
+}
 	function search_num($tabel,$room,$position,$conn) //获取机柜的数量
 {
 $sql = "SELECT * FROM ".$tabel." where 所在房间 = "."\"".$room."\""." and 所在位置 = "."\"".$position."\""; 

@@ -70,7 +70,7 @@ function gethtml($url)
 }
 
 
-for ($i=1;$i<50;$i++)
+for ($i=1;$i<10;$i++)
 {
     $str_start=97000+$i;
     $str_temp='https://www.dy2018.com/i/'.$str_start.'.html';
