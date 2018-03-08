@@ -241,7 +241,7 @@ function iframeload()
 	}
 function onload_handler() //检测过保设备
 {
-	alert("ddddd");
+	//alert("ddddd");
 	//console.log("ssssss");
 	$.get("life_time_alarm2.php", function(data){
  obj=jQuery.parseJSON(data);
@@ -405,7 +405,7 @@ if (position2>0)
 {t_name=data_ask.substring(position1,(position2-1));}
 else 
 {t_name=data_ask.substring(14);}
-alert("t_name:"+t_name);
+//alert("t_name:"+t_name);
 	 var xhr = new XMLHttpRequest();
      xhr.onreadystatechange = function()
 	 {

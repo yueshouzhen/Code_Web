@@ -62,7 +62,7 @@ if((time()-$_SESSION['time_in'])>6000) //设定登录时间
 						</a>
 					</div>
 					<div class="col-md-2 focus-grid">
-						<a href="pro_index.php">
+						<a href="project_main.php">
 							<div class="focus-border">
 								<div class="focus-layout">
 									<div class="focus-image"><i class="fa fa-briefcase"></i></div>

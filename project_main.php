@@ -13,7 +13,21 @@
 <style type="text/css">
 
 </style>
+<script type="text/javascript">
+$(document).ready(function(e) 
+{
+  // $.get("login.html",function(data){$("#newcontent").html(data);});
+	$('li[id=topage]>a').click(function(
+	){
+		//alert();
+		$.get($(this).attr('target'),function(data){$("#newcontent").html(data);});
+		//$.get($(this).attr('target'),function(data){$("#newcontent").html(data);});
+		});
 
+	
+	
+});
+</script>
 
 </head>
 
@@ -34,7 +48,7 @@
     </div> 
    
     <div class="row" style=" height:1000px;">
-   		<div class="col-lg-2" style=" height:100%;">
+   		<div class="col-lg-2" id="project_nav" style=" height:100%;">
            <!--开始导航-->
 		<nav class="navbar navbar-inverse " id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
@@ -48,27 +62,27 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i>新建项目 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">选择项目类型</li>
-                    <li><a href="#">公开招标项目</a></li>
-                    <li><a href="#">邀请招标项目</a></li>
-                    <li><a href="#">非招标项目</a></li>
+                    <li id="topage"><a target="gongkaizhaobiao.php">公开招标项目</a></li>
+                    <li id="topage"><a target="login.html">邀请招标项目</a></li>
+                    <li id="topage"><a target="feizhaobiao.php">非招标项目</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i>项目管理 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">选择项目</li>
-                    <li><a href="#">a</a></li>
-                    <li><a href="#">b</a></li>
-                    <li><a href="#">c</a></li>
+                    <li id="topage"><a href="#">a</a></li>
+                    <li id="topage"><a href="#">b</a></li>
+                    <li id="topage"><a href="#">c</a></li>
                   </ul>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-bank"></i>项目管理</a>
+                <li id="topage">
+                    <a href="#" ><i class="fa fa-fw fa-bank"></i>项目管理</a>
                 </li>
-                <li>
+                <li id="topage">
                     <a href="#"><i class="fa fa-fw fa-dropbox"></i>档案库</a>
                 </li>
-                <li>
+                <li id="topage">
                     <a href="#"><i class="fa fa-fw fa-twitter"></i>模板库</a>
                 </li>
             </ul>
@@ -76,7 +90,8 @@
            
            <!--结束导航-->
         </div>
-      <div class="col-lg-10 newcontent" style="background-color: #0C0; height:100%">  
+      <div class="col-lg-10 " id="newcontent" style="background-color: #AAA; height:100%">
+        
        </div>
         
         
