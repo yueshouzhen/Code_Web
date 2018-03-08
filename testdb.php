@@ -18,7 +18,7 @@ if((time()-$_SESSION['time_in'])>6000) //设定登录时间
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"  type="text/css"/>
  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
  <link rel="stylesheet" href="css/test_db_style.css" media="screen" type="text/css" />
- <link href="css/style_clock.css" rel="stylesheet" />
+
 <style type="text/css">
 .img-circle {
     border-radius: 50%;
