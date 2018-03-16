@@ -58,33 +58,30 @@ $(document).ready(function(e)
                     </a>
                 </li>
           
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i>新建项目 <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">选择项目类型</li>
-                    <li id="topage"><a target="gongkaizhaobiao.php">公开招标项目</a></li>
-                    <li id="topage"><a target="login.html">邀请招标项目</a></li>
-                    <li id="topage"><a target="feizhaobiao.php">非招标项目</a></li>
-                  </ul>
-                </li>
+               
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i>项目管理 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">选择项目</li>
-                    <li id="topage"><a href="#">a</a></li>
-                    <li id="topage"><a href="#">b</a></li>
-                    <li id="topage"><a href="#">c</a></li>
+                   <li class="dropdown-header">开始管理</li>
+                    <li id="topage"><a target="promanager.php">项目管理</a></li>
+                    <li id="topage"><a target="filemanager.php">档案管理</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-fw fa-plus"></i>项目提醒 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">提醒日程</li>
+                    <li id="topage"><a target="search_gopro.php">进行中项目</a></li>
+                    <li id="topage"><a target="search_donepro.php">已完结项目</a></li>
                   </ul>
                 </li>
                 <li id="topage">
-                    <a href="#" ><i class="fa fa-fw fa-bank"></i>项目管理</a>
+                    <a href="#" ><i class="fa fa-fw fa-bank"></i>模板管理</a>
                 </li>
                 <li id="topage">
                     <a href="#"><i class="fa fa-fw fa-dropbox"></i>档案库</a>
                 </li>
-                <li id="topage">
-                    <a href="#"><i class="fa fa-fw fa-twitter"></i>模板库</a>
-                </li>
+           
             </ul>
         </nav>     
            
