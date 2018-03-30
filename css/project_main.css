@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.container {
+  margin-left: 0;
+  margin-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  width:100%;
+}
+
+	.aligncenter{
+			background-color:#E15748;
+			margin-top:10%;
+		}
+
+a.logo {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+	line-height:80px;
+	margin-left:20px;
+/*	position: relative;
+	top: 50%;
+	transform: translateY(-50%);*/
+}
+#pj_title{
+	height:100px;
+	background-color:#FFF;
+	
+
+}

@@ -9,16 +9,14 @@
 <link href="css/gongkaizhaobiao.css" rel="stylesheet"/>
 <script type="text/javascript">
 $(document).ready(function(e) {
-	$("#yesorno").attr("readonly",true);
-	$("input:checkbox").change(function(e) {
-   if($(this).is(":checked"))
-   {$("#yesorno").attr("readonly",false)}
-   else
-   {$("#yesorno").attr("readonly",true)}
-});
+
+$("#quitme").click(function(e){
+window.close();
+	
+	})	
 	
 	
-$("button").click(function(e) {
+$("#newpro").click(function(e) {
 	var val="'";
    // alert("hello");
 	val=val+($("select").find("option:selected").text());
@@ -53,60 +51,45 @@ $("button").click(function(e) {
 
 <body >
 <div class="container" style=" margin-top:20px;" >
-<div class=" form-group">
-  <div class="row"> </div>
-  <div class="row rowheight"> 
-  	<div class="col-md-3 center-block" >
-    <div class="input-group">
-    	<span class="input-group-addon ">项目类型</span>
-        <select class="selectpicker form-control " title="请选择项目类型">
+  <div class="row rowheight">
+  <div class="col-md-12">
+      <div class="input-group"> <span class="input-group-addon" >项目名称</span>
+        <input type="text" class="form-control">
+      </div>
+   </div>
+  </div>
+  <div class="row rowheight">
+
+    <div class="col-md-3">
+      <div class="input-group"> <span class="input-group-addon" >项目编号</span>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  <div class="col-md-3" >
+    <div class="input-group ">
+    	<span class="input-group-addon  ">招标方式</span>
+        <select class="selectpicker form-control " title="请选择招标方式">
             <option value="0">公开招标</option>
             <option value="1">邀请招标</option>
             <option value="2">竞争性谈判</option>
             <option value="3">单一来源</option>
             <option value="4">询价</option>
         </select>
-     
         </div>
-  	</div>
-    <div class="col-mg-1 center-block">
-     <input type="checkbox"/><span style=""> &nbsp子项目</span>
-    </div>
- </div> 
   
-  <div class="row rowheight">
+  	</div>
     <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon" >主项目名称</span>
+      <div class="input-group"> <span class="input-group-addon">资金来源</span>
         <input type="text" class="form-control">
       </div>
     </div>
     <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">子项目名称</span>
-        <input type="text" class="form-control"  id="yesorno"> 
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">乙方单位</span>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">合同编号</span>
+      <div class="input-group"> <span class="input-group-addon">项目经费</span>
         <input type="text" class="form-control">
       </div>
     </div>
   </div>
   <div class="row rowheight">
-    <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">合同金额</span>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">结算金额</span>
-        <input type="text" class="form-control">
-      </div>
-    </div>
     <div class="col-md-3">
       <div class="input-group"> <span class="input-group-addon">开始时间</span>
         <input type="text" class="form-control">
@@ -117,20 +100,14 @@ $("button").click(function(e) {
         <input type="text" class="form-control">
       </div>
     </div>
-  </div>
-    <div class="row rowheight">
-    <div class="col-md-3">
-      <div class="input-group"> <span class="input-group-addon">项目来源</span>
-        <input type="text" class="form-control">
-      </div>
-    </div>
     <div class="col-md-3">
       <div class="input-group"> <span class="input-group-addon">项目负责人</span>
         <input type="text" class="form-control">
       </div>
     </div>
-
+   
   </div>
+
   <div class="row">
     <div class="col-md-12">
       <div class="input-group"> <span class="input-group-addon">项目简介</span> 
@@ -145,7 +122,6 @@ $("button").click(function(e) {
     <button type="button" class="btn btn-default pull-right " id="newpro">新建项目</button>
     
     </div>
-  </div>
   </div>
 </div>
 
